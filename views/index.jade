@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	div(class='btn-group')
+		button(id='button', class='btn') click
+		button(id='play', class='btn') play
+		button(id='pause', class='btn') pause
+	br
+	br
+	audio(id="weapon", src="mp3/04 Weapon of Choice.mp3", controls)
