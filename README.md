@@ -10,73 +10,60 @@ toinstall.mdにMac向けnode.jsやgit等のインストール方法をまとめ�
 ## リポジトリのクローン
 作業ディレクトリ上で以下のコマンドを叩いてください。
 
-'''
-$ git clone git@github.com:yutaono/node_serial_demo.git
-'''
+
+	$ git clone git@github.com:yutaono/node_serial_demo.git
+
 
 無事にクローンされればカレントディレクトリにnode_serial_demoディレクトリができています。
-'''
-$ cd node_serial_demo
-'''
+
+	$ cd node_serial_demo
+
 
 ## 実行
 
 以下のコマンドで実行されます。
 
-'''
-$ node app.js
-'''
+	$ node app.js
 
-http://localhost:3000にアクセス
+http://localhost:3000にアクセス。
 
 
 ## エラー対処
 
 ### serialportエラー
 
-'''
-$ node app.js
 
-/home/username/node_serial_demo/node_modules/serialport/node_modules/bindings/bindings.js:83
-        throw e
-              ^
-Error: /home/username/tmp/node_serial_demo/node_modules/serialport/build/Release/serialport.node: invalid ELF header
+	$ node app.js
 
-'''
+	/home/username/node_serial_demo/node_modules/serialport/node_modules/bindings/bindings.js:83
+	        throw e
+	              ^
+	Error: /home/username/tmp/node_serial_demo/node_modules/serialport/build/Release/serialport.node: invalid ELF header
+
 
 上記のエラーがでた場合、
 
-'''
-$ npm uninstall serialport
-$ npm install serialport
-'''
+	$ npm uninstall serialport
+	$ npm install serialport
 
 を実行してください。
 
 ### 端末の未検出エラー
 
-'''
-$ node app.js
-   info  - socket.io started
-Express server listening on port 3000
-err Error: Cannot open /dev/tty.usbmodemfd131
-'''
+	$ node app.js
+	   info  - socket.io started
+	Express server listening on port 3000
+	err Error: Cannot open /dev/tty.usbmodemfd131
 
 上記のエラーはArduino等の端末が見つからないときに起こります。
 
-'''
-$ ls /dev/tty*
-'''
+	$ ls /dev/tty*
 または
-'''
-$ ls /dev/tty.usb*
-'''
+	$ ls /dev/tty.usb*
 
 で表示されるポート名app.jsの46行目
 
-'''
-46 var portName = '/dev/tty.usbmodemfd131';
-'''
+	var portName = '/dev/tty.usbmodemfd131';
 
 を書き換えてください。
 
