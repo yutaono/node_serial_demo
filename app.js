@@ -74,9 +74,7 @@ sp.on('error', function(err) {
   console.log('err ' + err);
 });
 
-
 // Socket.io
-
 var io=require('socket.io').listen(server);
 
 io.sockets.on('connection', function(socket){
