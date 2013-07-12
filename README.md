@@ -2,12 +2,12 @@ node_serial_demo
 ======================
 This program is a demonstration for node_serialport.
  
-# 実行環境
+## 実行環境
 
 toinstall.mdにMac向けnode.jsやgit等のインストール方法をまとめました。
 まずはじめにtoinstall.mdで開発環境を構築してください。
 
-# リポジトリのクローン
+## リポジトリのクローン
 作業ディレクトリ上で以下のコマンドを叩いてください。
 
 '''
@@ -19,12 +19,20 @@ $ git clone git@github.com:yutaono/node_serial_demo.git
 $ cd node_serial_demo
 '''
 
-# 実行
+## 実行
+
+以下のコマンドで実行されます。
+
+'''
+$ node app.js
+'''
+
+http://localhost:3000にアクセス
 
 
-# エラー対処
+## エラー対処
 
-## serialportエラー
+### serialportエラー
 
 '''
 $ node app.js
@@ -45,7 +53,7 @@ $ npm install serialport
 
 を実行してください。
 
-## 端末の未検出エラー
+### 端末の未検出エラー
 
 '''
 $ node app.js
@@ -72,6 +80,6 @@ $ ls /dev/tty.usb*
 
 を書き換えてください。
 
-# 参考
+## 参考
 [node-serialportを使ってNode.jsでArduinoと通信する - 人と技術のマッシュアップ]
 (http://tomowatanabe.hatenablog.com/entry/2013/03/23/233554)
