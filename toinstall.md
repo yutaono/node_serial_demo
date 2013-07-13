@@ -1,7 +1,14 @@
 # toinstall.md
-node_serial_demoのための環境構築をするメモです。OSはMacを想定しています。
+[node_serial_demo](https://github.com/yutaono/node_serial_demo)のための環境構築をするメモです。OSはMacを想定しています。
+
+## Xcode
+AppleのIDEであるXcodeをインストールしてください。
+
+[Xcode](https://developer.apple.com/xcode/)
+
 
 ## node.js
+サーバサイドJavascript	ライブラリnode.jsをインストールしてください。
 
 http://nodejs.org/
 

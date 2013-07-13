@@ -4,7 +4,7 @@ This program is a demonstration for node_serialport.
  
 ## 実行環境
 
-toinstall.mdにMac向けnode.jsやgit等のインストール方法をまとめました。
+[toinstall.md](https://github.com/yutaono/node_serial_demo/toinstall.md)にMac向けnode.jsやgit等のインストール方法をまとめました。
 まずはじめにtoinstall.mdで開発環境を構築してください。
 
 ## リポジトリのクローン

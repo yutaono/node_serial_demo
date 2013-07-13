@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>tet</title>
+	<script type="text/javascript">
+
+	function leftOrRight(c){
+		if(c=='L') {
+
+		} else if(c=='R'){
+
+		} else {
+			console.log('error at leftOrRight');
+		}
+	}
+
+	function centerOrHeel(c){
+		if(c=='C'){
+
+		} else if(c=='B'){ //heel
+
+		} else {
+			console.log('error at centerOrHeel');
+		}
+	}
+
+	function tactStatus(c){
+		switch(c){
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			default:
+				break;
+		}
+	}
+
+	window.onload = function(){
+		var str = 'LB2';
+		if(str.match(/(L|R)(C|B)[1-5]/)){
+			console.log(str);
+
+			leftOrRight(str[0]);
+			centerOrHeel(str[1]);
+			tactStatus(str[2]);
+
+		} else {
+			console.log(str+ ': this expression is not match.');
+		}
+
+	};
+	</script>
+</head>
+<body>
+	<h1>test</h1>
+</body>
+</html>
