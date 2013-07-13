@@ -28,15 +28,14 @@ $ sudo port install nodejs
 
 https://npmjs.org/
 
-'''
+```
 $ curl http://npmjs.org/install.sh | sh
-'''
-
+```
 shの前にsudoがいる場合もあるみたいです。
 
-'''
+```
 curl http://npmjs.org/install.sh | sudo sh
-'''
+```
 
 
 ## git
