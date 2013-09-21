@@ -34,7 +34,13 @@ $ curl http://npmjs.org/install.sh | sh
 shの前にsudoがいる場合もあるみたいです。
 
 ```
-curl http://npmjs.org/install.sh | sudo sh
+$ curl http://npmjs.org/install.sh | sudo sh
+```
+
+package.jsonからモジュールをインストールします。
+
+```
+$ sudo npm install 
 ```
 
 

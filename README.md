@@ -23,7 +23,7 @@ This program is a demonstration for node_serialport.
 
 以下のコマンドで実行されます。
 
-	$ node app.js
+	$ node app
 
 http://localhost:3000にアクセス。
 
